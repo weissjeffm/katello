@@ -61,7 +61,7 @@ class katello::params {
   # Foreman settings
   case $deployment {
     'katello': {
-      $use_foreman = true
+      $use_foreman = false
     } default : {
       $use_foreman = false
     }
